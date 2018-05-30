@@ -1,0 +1,246 @@
+/* this is an external stylesheet. the advantage here is that you can change stuff in one place and it updates across the site */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #22093A ;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: #F6B8FA;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav li a:hover {
+    background-color: #560D9C;
+}
+
+table, th, td {
+	align-content: center;
+    border: 1px solid black;
+	border-collapse: collapse;
+}
+
+td { text-align: center;
+
+}
+
+td:hover {background-color: #581493}
+
+th, td {padding:15px;
+	}
+
+table {background: #EFD3F6}
+
+#change1 {
+	width: 25px;
+	height: 50px;
+	background: #A27CC0;
+	border: 1px #2C2738;
+	transition: width 2s, background 1s, border 3s;
+}
+
+#change1:hover {
+	width: 100px;
+	background: #C246CC;
+	border: 5px solid #161D4C;
+}
+
+#change2 {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	background: #4E69A3;
+	border: 2px solid #15245D;
+	
+	
+}
+
+#change2:hover {
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	background: #314879;
+	border: 5px solid #102D99;
+	text-size: 50px;
+	transition: width 2s, height 2s, background 2s, border 2s, text-size 2s;
+}
+
+#change3 {
+	@-webkit-keyframes scale-up-bottom {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+}
+@keyframes scale-up-bottom {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+}
+
+}
+
+
+
+.fa-heart {
+	color: red;
+	font-size: 3em;
+	text-shadow: 2px 2px 0 black;
+	
+}
+
+.fa-heart:hover {
+	color:hotpink;
+	font-size: 10em;
+	transition: color 1s, font-size 1s;
+}
+
+.fa-angellist {
+	font-size: 10px;
+	color: #EDC064;
+	text-shadow: 1px 1px 0 black;
+}
+
+.fa-angellist:hover {
+	transform: rotate(360deg);
+}
+
+#one {
+	text-align: center;
+	width: 200px center;
+	height: 20px center;
+	border: 3px solid #0A153F;
+	
+}
+
+#two:hover {
+	transition: stretch 30px;
+}
+
+/* The animation code */
+@keyframes example {
+   15% {background-color: red;}
+   25% {background-color: orange;}
+	35% {background-color: yellow;}
+	55% {background-color: green;}
+	65% {background-color: blue;}
+	75% {background-color: purple;}
+	95% {background-color: pink;}
+}
+
+/* The element to apply the animation to */
+#animate1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+
+@keyframes two {
+    0%   {background-color: deeppink;}
+    25%  {background-color: magenta;}
+    50%  {background-color: purple;}
+    100% {background-color: aqua;}
+}
+
+#animate2 {
+    width: 25px;
+    height: 25px;
+    background-color: deeppink;
+    animation-name: two;
+    animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes animate3 {
+    0%   {background-color: pink;}
+    25%  {background-color: #CDA8F6;}
+    50%  {background-color: #8D71D3;}
+    100% {background-color: #6B77D4;}
+	100%   {background-color: pink;}
+}
+
+/* The element to apply the animation to */
+#animate3 {
+    width: 200px;
+    height: 100px;
+	border:#000000 solid 2px;
+	text-align: center;
+    background-color: red;
+    animation-name: animate3;
+    animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@media print {
+	
+	p {
+		max-width: 5in;
+		margin-left: 2in;
+	}
+	
+	h1 {
+		text-align: center;
+	}
+	
+	p .fa {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
